@@ -14,6 +14,6 @@ app.use(cors(corsConfig))
 connectDB()
 
 app.use(express.json()) // Para que express entienda los JSON
-app.use('/api', router)
+app.use('/', router)
 
 export default app
